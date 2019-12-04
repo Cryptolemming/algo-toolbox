@@ -5,14 +5,9 @@
 import sys
 
 """
-    last digit sum at each of from and to
-    subtract the two resulting digits
-    if from_digit < to_digit (fd+10) - td else fd - td
+    since we start at the contribution to sum of from_,
+    get modulo 10 subtraction of to - (from_ - 1)
 """
-# possible last digit at from - last digit at from-1 to
-# get from's contribution to the sum, as the sum from m
-# to n starts at m fib value, then n last digit - the result from
-# previous
 def last_digit_partial_sum_fib(from_, to):
     if from_ <= 1: return last_digit_sum_fib(to)
 

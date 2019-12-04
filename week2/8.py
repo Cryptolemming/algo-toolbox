@@ -3,9 +3,9 @@
 
 from sys import stdin
 
-# ((last digit at n) * (last digit at n + 1)) % 10
+# last digit sum of squares at n = ((last digit at n) * (last digit at n + 1)) % 10
 def last_digit_sum_squares_fib(n):
-    if n <= 2: return n 
+    if n <= 2: return n
 
     last_digits = last_digits_fib(n+1)
 
