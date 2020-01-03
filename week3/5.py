@@ -1,3 +1,4 @@
+#python3
 # collecting signatures
 
 import sys

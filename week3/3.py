@@ -1,3 +1,4 @@
+#python3
 # car fueling
 import sys
 
@@ -24,7 +25,6 @@ def min_number_stops(d, m, stops):
 
 if __name__ == "__main__":
     input = list(map(int, sys.stdin.read().split()))
-    print(input)
     d, m = input[:2]
     stops = input[3:]
     print(min_number_stops(d, m, stops))

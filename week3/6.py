@@ -1,3 +1,4 @@
+#python3
 # maximum number of prizes
 
 import sys
@@ -14,7 +15,7 @@ def max_prizes(n):
         else:
             result.append(str(n))
             n -= n
-            
+
     return result;
 
 

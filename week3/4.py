@@ -1,3 +1,4 @@
+#python3
 # max ad revenue
 
 import sys
