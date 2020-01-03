@@ -6,7 +6,6 @@ import sys
 def max_value_of_loot(capacity, values, weights):
     max_value = 0
     ratios = sorted(enumerate([v / w for v, w in zip(values, weights)]), key=lambda r: r[1], reverse=True)
-    print(values, weights, ratios)
     i = 0
     ratios_length = len(ratios)
     while capacity > 0 and i < ratios_length:
@@ -28,4 +27,4 @@ if __name__ == '__main__':
     n, capacity = input[:2]
     values = input[2::2]
     weights = input[3::2]
-    print("{:.4f}".format(max_value_of_loot(capacity, values, weights)))
+    print("{:.3f}".format(max_value_of_loot(capacity, values, weights)))
